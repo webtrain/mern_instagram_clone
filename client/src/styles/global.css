@@ -1,0 +1,70 @@
+body {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: rgb(61, 61, 61);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(160, 160, 160)
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#theme {
+  display: none;
+}
+
+#theme:checked ~ .app {
+  filter: invert(1)
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gender label input {
+  margin-left: 0.5rem;
+}
+
+
+/* -------- Login Page -------- */
+@import './auth.css';
+/* -------- Loading -------- */
+@import './loading.css';
+/* -------- Header -------- */
+@import './header.css';
+/* -------- Avatar -------- */
+@import './avatar.css';
